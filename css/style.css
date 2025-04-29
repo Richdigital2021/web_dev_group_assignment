@@ -1,0 +1,286 @@
+/* ==========================================================================
+   Base Styles
+   ========================================================================== */
+   body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* ==========================================================================
+     Utility Classes
+     ========================================================================== */
+  .bg-custom-grey {
+    background-color: #f8f9fa;
+  }
+  
+  .content-narrow {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Custom container width on very large screens */
+  @media (min-width: 1400px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+      max-width: 90%;
+    }
+  }
+
+  /* ==========================================================================
+
+   Navbar
+    ========================================================================== */
+    
+  
+    .transparent-navbar {
+      background-color: transparent !important;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .navbar .nav-link, 
+    .navbar-brand {
+      color: #fff !important;
+    }
+
+    .navbar .nav-link:hover {
+      color: #00b894 !important; /* Bootstrap primary color */
+    }
+
+    .btn-outline-light:hover {
+      color: #fff !important;
+      background-color: #00897b;
+      border-color: #00b894;
+    }
+ 
+  /* ==========================================================================
+     Hero Section
+     ========================================================================== */
+  .hero-section {
+    position: relative;
+    background: url('../images/hero.png') no-repeat center center/cover;
+    min-height: 100vh;
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+  }
+  
+  .intro-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  
+  .hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .outline-text {
+    color: transparent;
+    -webkit-text-stroke: 1px #ffffff;
+    font-weight: 800;
+  }
+  
+  .hero-description {
+    color: #cccccc;
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  
+  .hero-img {
+    max-width: 90%;
+  }
+  
+  /* ==========================================================================
+     Buttons
+     ========================================================================== */
+  .btn-success {
+    background-color: #00b894;
+    border: none;
+  }
+  
+  .btn-outline-light {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-outline-light:hover {
+    background-color: #ffffff;
+    color: #000;
+  }
+  
+  /* ==========================================================================
+     About Section
+     ========================================================================== */
+  .about h5 {
+    color: #999;
+    font-weight: 600;
+  }
+  
+  /* ==========================================================================
+     Services Section
+     ========================================================================== */
+  .services i {
+    color: #00b894;
+  }
+  
+  /* ==========================================================================
+     Skills Section
+     ========================================================================== */
+  .skills-section {
+    background-color: #ffffff;
+  }
+  
+  .section-subtitle {
+    color: #6c757d;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .section-title {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .section-description {
+    color: #6c757d;
+    font-size: 16px;
+  }
+  
+  .skill .progress {
+    height: 6px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+  }
+  
+  .skill .progress-bar {
+    background-color: #00897b;
+    border-radius: 5px;
+  }
+  
+  .skill-item .icon {
+    font-size: 2rem;
+    color: #2ca58d;
+  }
+
+  .icon i {
+    color: #00897b !important;
+  }
+  
+  
+  .skill-item p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0;
+  }
+  
+  /* ==========================================================================
+     Stats Section
+     ========================================================================== */
+  .stats-section h2 {
+    color: #2ca58d;
+  }
+  
+  .stats-section p {
+    margin-top: 0.5rem;
+  }
+  
+  .stats h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  /* ==========================================================================
+     My Success Work
+     ========================================================================== */
+  .gallery img {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* ==========================================================================
+     Contact Section
+     ========================================================================== */
+  .contact input {
+    border-radius: 50px;
+    padding: 10px 20px;
+  }
+  
+  .contact button {
+    border-radius: 50px;
+  }
+  
+  /* ==========================================================================
+     Footer
+     ========================================================================== */
+  footer {
+    background-color: #03171c;
+    color: whitesmoke;
+    font-size: 0.9rem;
+    padding: 30px 0;
+  }
+  
+  .social-links a {
+    color: whitesmoke;
+    margin-left: 15px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #00b894;
+  }
+  
+  /* ==========================================================================
+     Responsive Adjustments
+     ========================================================================== */
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2rem;
+    }
+  
+    .intro-text {
+      font-size: 1.1rem;
+    }
+  
+    .hero-description {
+      font-size: 0.9rem;
+    }
+  
+    .content-narrow {
+      max-width: 90%;
+    }
+  }
+  
